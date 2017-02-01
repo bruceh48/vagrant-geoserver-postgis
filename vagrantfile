@@ -73,11 +73,11 @@ Vagrant.configure(2) do |config|
   config.vm.provision "shell", privileged: false, run: "always", inline: <<-EOF
   echo " "
   echo " "
-  echo " ========================================================"
+  echo " ============================================================================"
   echo " "
-  echo " Point your browser to http://#{setup[:ip_address]}:8080"
+  echo " Point your browser to http://#{setup[:ip_address]}:8080/geoserver"
   echo " "
-  echo " ========================================================"
+  echo " ============================================================================"
   echo " "
   echo " "
 EOF
